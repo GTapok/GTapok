@@ -10,5 +10,5 @@ def my_life():
   GTapok.Work()
   GTapok.Sleep()
 
-while GTapok.Dead():
+while GTapok.NotDead():
   my_life()
