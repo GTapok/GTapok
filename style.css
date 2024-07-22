@@ -1,0 +1,91 @@
+body {
+    background-color: #0f0f0f;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #00ff00;
+    animation: boxShadowAnimation 10s infinite;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.name {
+    font-size: 3em;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 1), 0 0 20px rgba(0, 255, 0, 0.5);
+
+}
+
+@keyframes textShadowAnimation {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(0, 255, 0, 1), 0 0 20px rgba(0, 255, 0, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 5px rgba(0, 255, 0, 0.3), 0 0 0 rgba(0, 255, 0, 0);
+    }
+}
+
+@keyframes boxShadowAnimation {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(0, 255, 0, 1), 0 0 20px rgba(0, 255, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 50px rgba(0, 255, 0, 0.3), 0 0 0 rgba(0, 255, 0, 0);
+    }
+}
+
+.animated-text {
+    font-size: 3em;
+    animation: textShadowAnimation 3s infinite;
+}
+
+
+.tagline {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+h2 {
+    border-bottom: 2px solid #00ff00;
+    padding-bottom: 10px;
+    animation: textShadowAnimation 10s infinite;
+}
+
+.about, .contact {
+    margin-bottom: 30px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.8em;
+}
+
+.my-svg {
+    width: 50px;
+    height: auto;
+    fill: #00ff00;
+}
+.hmm {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    height: 18px;
+    position: fixed;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 1), 0 0 20px rgba(0, 255, 0, 1);
+}
+
+.idk {
+    padding-bottom: -10px;
+    text-align: right;
+}
